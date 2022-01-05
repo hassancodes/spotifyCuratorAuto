@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from dbhandle import dbhandle, longTermData
 from collections import OrderedDict
 import pprint
 import json
@@ -271,3 +272,6 @@ time.sleep(10)
 print("Success you got it")
 time.sleep(10)
 driver.close()
+
+dbhandle()
+longTermData()
